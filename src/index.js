@@ -19,11 +19,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <div>მთავარი გვერდი</div>,
+        element: <div>Home Page</div>,
       },
       {
         path: "about",
-        element: <div>ჩვენს შესახებ</div>,
+        element: <div>About Us</div>,
       },
       {
         path: "posts",

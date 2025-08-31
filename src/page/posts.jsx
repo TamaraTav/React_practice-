@@ -18,7 +18,7 @@ function Posts() {
                     <div className="post" key={i}> 
                         <h1>{post.title}</h1>
                         <p>{post.body}</p>
-                        <Link to={`/post/${post.id}`}> მეტის ნახვა </Link>
+                        <Link to={`/post/${post.id}`}> See more.. </Link>
                     </div>
                 ))
             }

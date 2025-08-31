@@ -9,9 +9,9 @@ function App() {
       <header>
         <div className="logo">TAMARA's Page</div>
         <div className='links'>
-          <Link to={''}> მთავარი </Link>
-          <Link to={'posts'}> პოსტები </Link>
-          <Link to={'about'}> ჩვენს შესახებ </Link>
+          <Link to={''}> Home </Link>
+          <Link to={'posts'}> Posts </Link>
+          <Link to={'about'}> About us </Link>
         </div>
       </header>
       <Outlet/>
