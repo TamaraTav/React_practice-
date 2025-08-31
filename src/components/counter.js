@@ -1,18 +1,23 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function Counter() {
-  const [ricxvi,ricxvisMinicheba] = useState(3)
-  const kleba = ()=>{
-    if(ricxvi > 0) {
-      ricxvisMinicheba(ricxvi-1)
+  const [count, setCount] = useState(3);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
     }
-  }
+  };
 
   return (
-    <div className='counter-cont'>
-        <button onClick={()=>{ ricxvisMinicheba(ricxvi+1) }}>გაზრდა</button>
-        <div className='count'> {ricxvi} </div>
-        <button onClick={kleba}>კლება</button>
+    <div className="counter-cont">
+      <button onClick={increment}>გაზრდა</button>
+      <div className="count">{count}</div>
+      <button onClick={decrement}>კლება</button>
     </div>
   );
 }
