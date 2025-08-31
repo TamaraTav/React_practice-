@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function Post() {
@@ -6,6 +6,7 @@ function Post() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -32,6 +33,10 @@ function Post() {
     }
   }, [id]);
 
+  const handleBack = () => {
+    navigate("/posts");
+  };
+
   if (loading) {
     return <div className="loading">Loading post...</div>;
   }
@@ -46,6 +51,9 @@ function Post() {
 
   return (
     <div className="post-page">
+      <button className="back-button" onClick={handleBack}>
+        ← Back to Posts
+      </button>
       <h1>{post.title}</h1>
       <p>{post.body}</p>
     </div>
