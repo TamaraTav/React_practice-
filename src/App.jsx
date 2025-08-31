@@ -1,20 +1,20 @@
-// import surati from './logo.svg';
-import './App.css';
+import "./App.css";
 import { Link, Outlet } from "react-router-dom";
 
 function App() {
-
   return (
-    <div>
-      <header>
+    <div className="app">
+      <header className="header">
         <div className="logo">TAMARA's Page</div>
-        <div className='links'>
-          <Link to={''}> Home </Link>
-          <Link to={'posts'}> Posts </Link>
-          <Link to={'about'}> About us </Link>
-        </div>
+        <nav className="navigation">
+          <Link to="/">Home</Link>
+          <Link to="/posts">Posts</Link>
+          <Link to="/about">About us</Link>
+        </nav>
       </header>
-      <Outlet/>
+      <main className="main-content">
+        <Outlet />
+      </main>
     </div>
   );
 }
