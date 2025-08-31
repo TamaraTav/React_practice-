@@ -1,0 +1,52 @@
+/* header */
+
+header {
+  padding: 20px 50px;
+  box-shadow: 2px 2px 8px #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .links a {
+  padding: 0 10px;
+}
+
+/* counter */
+.counter-cont {
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* posts */
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1400px;
+  margin: 30px auto;
+  gap: 20px;
+}
+
+.post {
+  box-shadow: 2px 2px 8px #333;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* post page */
+
+.post-page {
+  padding: 20px;
+  max-width: 700px;
+}
